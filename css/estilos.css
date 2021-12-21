@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color: lightgrey;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav {
+  width: 30%;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*Estilos del main*/
+
+main {
+  grid-area: main;
+  background-color: aquamarine;
+  padding-top: 1.5rem;
+}
+
+.carrusel {
+  grid-area: carrusel;
+  background-color: purple;
+  width: 25rem;
+  margin: 4rem 8rem;
+  border: solid 2px yellow;
+}
+.recom {
+  grid-area: recom;
+  text-align: center;
+}
+.recomTitulo {
+  text-align: center;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+/*Estilos de las cards de productos */
+.card {
+  background-color: red;
+  border: solid 2px black;
+  display: inline-block;
+  width: 15rem;
+  height: 20rem;
+  margin: 3rem;
+}
+.card img {
+  width: 100%;
+  height: 15rem;
+  background-color: blanchedalmond;
+}
+.card h3 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+}
+
+/*Estilos footer */
+footer {
+  grid-area: footer;
+  background-color: cadetblue;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Estilos formularios*/
+.formulario {
+  margin: 1rem 1rem 0 1rem;
+  line-height: 2rem;
+}
+.tituloForm {
+  margin-left: 1rem;
+}
+/*Estilos empresa.html*/
+.contenedorEmpresa {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "tituloGrid tituloGrid"
+    "imgGrid textoGrid";
+}
+.tituloGrid {
+  grid-area: tituloGrid;
+  margin-left: 1rem;
+}
+.imgGrid {
+  grid-area: imgGrid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.imgEmpresa {
+  width: 20rem;
+  height: 20rem;
+  background-color: goldenrod;
+}
+.textoGrid {
+  grid-area: textoGrid;
+  padding: 1rem;
+}
+/*Estilos productos.html*/
+.productos {
+  background-color: greenyellow;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.productos div {
+  width: 35%;
+  height: 15rem;
+  margin: 1rem;
+  border: solid 2px black;
+}
+.tituloProducto {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+  }
+  nav ul li {
+    margin: 0.1rem 0;
+  }
+  .carrusel {
+    width: 18rem;
+    margin: 1rem;
+  }
+  .card {
+    background-color: red;
+    border: solid 2px black;
+    display: inline-block;
+    width: 15rem;
+    height: 20rem;
+    margin: 1.5rem;
+  }
+  .card img {
+    width: 100%;
+    height: 15rem;
+    background-color: blanchedalmond;
+  }
+  footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div {
+    margin: 0.5rem;
+  }
+  /*media productos.html*/
+  .productos {
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .productos div {
+    width: 75%;
+    height: 15rem;
+    margin: 0.5rem;
+  }
+  /*media empresa.html*/
+  .contenedorEmpresa {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "tituloGrid"
+      "imgGrid"
+      "textoGrid";
+  }
+  .imgGrid {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  .imgEmpresa {
+    width: 18rem;
+    height: 18rem;
+  }
+}
