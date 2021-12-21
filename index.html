@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link animate.css-->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- link wow.js -->
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
 
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Proyecto Final</title>
@@ -35,14 +38,14 @@
             <section class="recom">
                 <h2 class="recomTitulo">Productos Recomendados</h2>
                 <!--Estas son las cards de los productos recomendados-->
-                <div class="card animate__animated animate__zoomIn">
+                <div class="card wow animate__animated animate__zoomIn">
                     <img src="./img/alf-1.jpg" alt="Img del prod">
                     <h3>Nom prod</h3>
                     <p>Descripcion del productos </p>
                     <p>$ 100</p>
                     
                 </div>
-                <div class="card animate__animated animate__zoomIn">
+                <div class="card wow animate__animated animate__zoomIn">
                     <img src="./img/choco-1.jpg" alt="Img del prod">
                     <h3>Nom prod</h3>
                     <div>
@@ -50,7 +53,7 @@
                         <p>$ 100</p>
                     </div>    
                 </div>
-                <div class="card animate__animated animate__zoomIn">
+                <div class="card wow animate__animated animate__zoomIn">
                     <img src="./img/gomita-1.jpg" alt="Img del prod">
                     <h3>Nom prod</h3>
                     <p>Descripcion del productos </p>
@@ -75,5 +78,12 @@
 
         </footer>
     </div>
+
+    <!--Script wow.js-->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
 </body>
 </html>
