@@ -72,6 +72,10 @@ main {
   height: 20rem;
   margin: 3rem;
 }
+.card:hover {
+  transition: all 1s;
+  transform: scale(1.15);
+}
 .card img {
   width: 100%;
   height: 15rem;
@@ -145,6 +149,10 @@ footer {
   height: 15rem;
   margin: 1rem;
   border: solid 2px black;
+}
+.efecto:hover {
+  transition: all 1s;
+  transform: scale(1.15);
 }
 .tituloProducto {
   margin-left: 1rem;
