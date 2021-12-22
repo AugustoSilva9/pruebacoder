@@ -143,16 +143,18 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 1rem;
+  padding: 1rem 0;
 }
-.productos div {
-  width: 35%;
-  height: 15rem;
+.productos div a img {
+  width: 28rem;
+  /*height: 25rem;*/
   margin: 1rem;
   border: solid 2px black;
 }
 .efecto:hover {
   transition: all 1s;
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 .tituloProducto {
   margin-left: 1rem;
