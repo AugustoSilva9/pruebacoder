@@ -12,7 +12,7 @@
     "main main main main"
     "footer footer footer footer";
 }
-
+/*
 header {
   grid-area: header;
   background-color: lightgrey;
@@ -24,7 +24,7 @@ header {
   padding: 0 20px;
 }
 
-nav {
+ nav {
   width: 30%;
 }
 nav ul {
@@ -34,11 +34,15 @@ nav ul {
 }
 nav ul li {
   list-style-type: none;
-}
+} */
 a {
   text-decoration: none;
 }
-
+.barra {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end !important;
+}
 /*Estilos del main*/
 
 main {
